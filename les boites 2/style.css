@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.boite {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        justify-content: flex-start;
+    }
+
+    .boite:nth-child(even) {
+        display: none;
+    }
+
+    .boite {
+        margin: 0 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        justify-content: flex-start;
+    }
+
+    .boite:nth-child(odd) {
+        display: none;
+    }
+
+    .boite {
+        margin: 0 15px;
+    }
+}
